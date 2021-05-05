@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Button, Form, Container, Jumbotron, Table, Row } from 'react-bootstrap';
 import './App.css';
 
-const currentDate = new Date(new Date()).toLocaleDateString('en-GB', { hour12: true, year: 'numeric', day: '2-digit', month: '2-digit', hour: 'numeric', minute: '2-digit', second: '2-digit', })
-  .toString();
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -25,6 +24,8 @@ class App extends Component {
   handleAdd = (e) => {
     e.preventDefault()
     const { balance, amount, transactionList } = this.state;
+	const currentDate = new Date(new Date()).toLocaleDateString('en-GB', { hour12: true, year: 'numeric', day: '2-digit', month: '2-digit', hour: 'numeric', minute: '2-digit', second: '2-digit', })
+  .toString();  
     if (amount !== '') {
       const newAmount = (Number(balance) + Number(amount))
 
@@ -53,6 +54,8 @@ class App extends Component {
     e.preventDefault()
 
     const { balance, amount, transactionList } = this.state;
+	   const currentDate = new Date(new Date()).toLocaleDateString('en-GB', { hour12: true, year: 'numeric', day: '2-digit', month: '2-digit', hour: 'numeric', minute: '2-digit', second: '2-digit', })
+  .toString();
     if (amount !== '') {
 
       const newAmount = (Number(balance) - Number(amount))
