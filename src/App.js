@@ -121,7 +121,7 @@ class App extends Component {
             
        {/* transaction list part */}
           <Jumbotron className="mt-8 w-100">
-            <h4 className="">Transactions :gith</h4>
+            <h4 className="">Transactions :</h4>
             <Table striped bordered hover>
               <thead>
                 <tr>
