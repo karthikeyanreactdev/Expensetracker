@@ -1,0 +1,5 @@
+after clone from github
+
+use yarn or npm install to install all npm packages 
+
+then use yarn  start or npm start to run
